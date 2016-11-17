@@ -12,7 +12,15 @@ body {
 		margin: 0 auto;
 		border: 2px double black; 
 	}
-		.strings-button {
+		.cheat-sheet {
+			max-width: 90%;
+			left: 5%;
+			top: 200px;
+			position: fixed;
+			z-index: 999;
+		}
+		.strings-button, 
+		.cheat-toggle {
 			margin-top: 20px;
 			padding: 8px 20px;
 			background: red;
@@ -22,6 +30,9 @@ body {
 			font-family: 'Muli', sans-serif;
 			font-size: 24px;
 			cursor: pointer;
+		}
+		.cheat-toggle {
+			background: green;
 		}
 
 		.note {
@@ -34,13 +45,16 @@ body {
 		}
 
 /* States */
-
+		.deactivated {
+			background: red;
+		}
 		.active {
 			background: green;
 		}
 		.hide {
 			display: none;
 		}
-		.margin-top {
+		.margin {
 			margin-top: 30px;
+			margin-bottom: 30px;
 		}

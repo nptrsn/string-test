@@ -1,8 +1,9 @@
 var notes = [
-	"A","A#","B","C","C#","D","D#","E","F","F#","G","G#"
+	"A","A#","Bb", "B","C","C#","Db","D","D#","Eb","E","F","F#","Gb","G","G#","Ab"
 ];
 var strings = [
-	"Low E", "A", "D", "G", "B", "E"
+	"Low E", "A"
+  // , "D", "G", "B", "E"
 ];
 
 function getNote() {
@@ -18,10 +19,15 @@ function getString() {
 setInterval(function() {
   getNote();
   getString();
-}, 2500);
+}, 6000);
 
 function buttonClick(){
 	$('.strings-button').toggleClass('active');
 	$('.string').toggleClass('hide');
-	$('.note').toggleClass('margin-top');
+	$('.note').toggleClass('margin');
+}
+
+function cheatSheet(){
+  $('.cheat-toggle').toggleClass('deactivated');
+  $('.cheat-sheet').toggleClass('hide');
 }
