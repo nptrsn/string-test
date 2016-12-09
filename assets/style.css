@@ -10,7 +10,6 @@ body {
 		width: 50%;
 		max-width: 50%;
 		margin: 0 auto;
-		border: 2px double black; 
 	}
 		.cheat-sheet {
 			max-width: 90%;
@@ -20,7 +19,8 @@ body {
 			z-index: 999;
 		}
 		.strings-button, 
-		.cheat-toggle {
+		.cheat-toggle, 
+		.sound-toggle {
 			margin-top: 20px;
 			padding: 8px 20px;
 			background: red;
@@ -30,11 +30,14 @@ body {
 			font-family: 'Muli', sans-serif;
 			font-size: 24px;
 			cursor: pointer;
+			outline:none
 		}
 		.cheat-toggle {
 			background: green;
 		}
-
+		.sound-toggle {
+			background: black;
+		}
 		.note {
 			font-size: 128px;
 			font-family: 'Archivo Narrow', sans-serif;
@@ -42,6 +45,9 @@ body {
 		.string {
 			font-family: 'Archivo Narrow', sans-serif;
 			font-size: 48px;
+		}
+		.sound-bank {
+			display: none;
 		}
 
 /* States */
