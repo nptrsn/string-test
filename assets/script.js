@@ -69,3 +69,7 @@ function cheatSheet(){
   $('.cheat-sheet').toggleClass('hide');
 }
 
+function playSound () {
+  $('.sound')[0].play();
+}
+
